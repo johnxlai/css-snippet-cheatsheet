@@ -41,8 +41,9 @@ section.row .col {
   transition: 0.5s;
 }
 
-section.row .col:hover {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1), 0 0 5px rgba(81, 203, 238, 1);
+section.row .col:hover,
+section.row .col:hover > header {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1), 0 0 10px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
 }
 
