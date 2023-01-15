@@ -21,25 +21,48 @@ body {
 }
 
 /* Header Section */
-header {
+header.page-header {
   padding: 20px;
 }
 
 /* Main */
 section.row {
-  background-color: black;
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
   gap: 16px;
 }
+
 section.row .col {
-  background: goldenrod;
-  flex: 1 0 100%;
-  /* Using gap on parent instead */
-  /* margin: 2%; */
+  flex-basis: 100%;
+  border: 1px dashed white;
+  position: relative;
+  margin-top: 50px;
+  padding: 16px;
 }
 
+section.row .col header {
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: var(--grey);
+  position: absolute;
+  top: -30px;
+  width: 96%;
+  left: 2%;
+}
+section.row .col header h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+section.row .col > p {
+  margin-top: 30px;
+}
+
+pre {
+  background-color: #97529f;
+  padding: 16px;
+}
 /* Extra small devices (phones, 600px and down) */
 /* @media screen and (min-width: 600px) {
 } */
