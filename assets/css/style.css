@@ -49,6 +49,7 @@ section.row .col header {
   top: -30px;
   width: 96%;
   left: 2%;
+  padding: 20px;
 }
 section.row .col header h2 {
   font-size: 1.2rem;
