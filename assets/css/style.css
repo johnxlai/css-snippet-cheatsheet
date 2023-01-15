@@ -33,7 +33,7 @@ section.row {
 }
 
 section.row .col {
-  flex-basis: 100%;
+  flex: 1 0 100%;
   border: 1px dashed white;
   position: relative;
   margin-top: 50px;
@@ -70,14 +70,15 @@ pre {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   section.row .col {
-    flex-basis: calc(50% - 16px);
+    flex: 1 0 calc(50% - 16px);
+    /* flex-basis: calc(50% - 16px); */
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   section.row .col {
-    flex-basis: calc(33.3% - 16px);
+    flex: 1 0 calc(33.3% - 16px);
   }
 }
 
