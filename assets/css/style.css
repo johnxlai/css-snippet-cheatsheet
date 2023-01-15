@@ -17,6 +17,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Header Section */
@@ -30,11 +31,13 @@ section.row {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
+  gap: 16px;
 }
 section.row .col {
   background: goldenrod;
-  flex: 1 0 96%;
-  margin: 2%;
+  flex: 1 0 100%;
+  /* Using gap on parent instead */
+  /* margin: 2%; */
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -44,15 +47,14 @@ section.row .col {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   section.row .col {
-    flex-basis: 46%;
+    flex-basis: calc(50% - 16px);
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   section.row .col {
-    flex-basis: 30%;
-    margin: 1.33%;
+    flex-basis: calc(33.3% - 16px);
   }
 }
 
@@ -61,7 +63,7 @@ section.row .col {
 }
 /* Footer */
 footer {
-  margin-top: auto;
+  /* margin-top: auto; */
   padding: 1.6rem;
 }
 footer h6 {
